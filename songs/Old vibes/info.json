@@ -1,7 +1,14 @@
 {
-    "title":"Old Vibes",
-    "description":"Retro classics and timeless tunes that bring back golden memories.",
-    "cover": "cover.jpg",
-  "songs": ["Cheap Thrills My dil goes mm remix.mp3", "Dil cheez tujhe dedi ( slowed + reverb ).mp3", "Falak Tak - Gravero.mp3","Hangover lofi-nostalgic remix.mp3",
-  "Mere Mehboob Mere Sanam(remix).mp3","Raghav - Desperado.mp3","Saat Samundar Paar(remix).mp3"]
+  "title": "Old Vibes",
+  "description": "Retro classics and timeless tunes that bring back golden memories.",
+  "cover": "cover.jpg",
+  "songs": [
+    "Cheap Thrills My dil goes mm remix.mp3",
+    "Dil cheez tujhe dedi ( slowed + reverb ).mp3",
+    "Falak Tak - Gravero.mp3",
+    "Hangover lofi-nostalgic remix.mp3",
+    "Mere Mehboob Mere Sanam(remix).mp3",
+    "Raghav - Desperado.mp3",
+    "Saat Samundar Paar(remix).mp3"
+  ]
 }
