@@ -6,9 +6,10 @@ const playBtn = document.getElementById("play");
 const previousBtn = document.getElementById("previous");
 const nextBtn = document.getElementById("next");
 
-const base = window.location.pathname.split("/").length > 2
-  ? "/" + window.location.pathname.split("/")[1]
-  : "";
+let base = "/Spotify-premium";
+// const base = window.location.pathname.split("/").length > 2
+//   ? "/" + window.location.pathname.split("/")[1]
+//   : "";
 
 // Highlight format seconds → mm:ss
 function secondsToMMSS(seconds) {
@@ -84,6 +85,7 @@ nextBtn.addEventListener("click", () => {
 //     currentSong.play();
 //   }
 // }
+
 
 function playMusic(track, pause = false) {
   currentSong.src = `${base}/${currfolder}/${track}`;
