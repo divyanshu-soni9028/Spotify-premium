@@ -74,16 +74,27 @@ nextBtn.addEventListener("click", () => {
 });
 
 // Play a track
+// function playMusic(track, pause = false) {
+//   currentSong.src = `${base}/${currfolder}/${track}`;
+//   document.querySelector(".songinfo").innerText = track.replace(".mp3", "");
+//   document.querySelector(".songtime").innerText = "00:00/00:00";
+
+//   if (!pause) {
+//     playBtn.src = "img/pause.svg";
+//     currentSong.play();
+//   }
+// }
+
 function playMusic(track, pause = false) {
   currentSong.src = `${base}/${currfolder}/${track}`;
   document.querySelector(".songinfo").innerText = track.replace(".mp3", "");
   document.querySelector(".songtime").innerText = "00:00/00:00";
-
   if (!pause) {
     playBtn.src = "img/pause.svg";
     currentSong.play();
   }
 }
+
 
 // Load songs array & populate UI
 async function getSongs(folder) {
