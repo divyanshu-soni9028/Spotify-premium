@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --a:0;
+    --b:14vh;
+    /* ye variable playlist k pay button ki opacity aur bottom margin ko hover krne prr allag banane k liye banaye hain */
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+.left{
+    width: 25vw;
+    padding: 10px;
+}
+
+.right{
+    width: 80vw;
+    height: 118vh;
+    margin: 11px 0;
+    /* left right se ni dere coz already bhaut h */
+    position: relative;
+    
+}
+
+.home ul li{
+    list-style: none;
+    width: 12px;
+    display: flex;
+    gap: 15px;
+    /* ye gap lists ke beech ka nhi h....list ke andar ke items ke beech ka h...here it is gap between logo and text  */
+    /* You should apply gap to the container of the <li>s, which is the <ul> */
+
+    padding-top: 8px;
+    font-size: small;
+}
+
+.home{
+    padding: 10px;
+   min-width: 158px;
+}
+m-1{
+    margin: 5px;
+}
+
+p-0{
+    padding: 10px;
+}
+
+.library{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+    min-height: 80vh;
+    position: relative;
+    min-width: 178px;
+}
+
+.heading {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 16px;
+}
+
+.heading img {
+    width: 30px;
+}
+
+.footer{
+    display: flex;
+    font-size: 12px;
+    gap: 60px;
+    margin-right: 1px;
+    padding: 1px;
+}
+
+.footer a{
+    color: gray;
+    position: absolute;
+    bottom: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* ye inspect me jaake check krke daala h humne */
+     background-color: rgb(34 34 34);
+     height: 12vh;
+     align-items: center;
+     border-radius: 5px;
+
+}
+
+.header>* {
+    /* >: This is the child combinator, which selects only direct children of the .header element (not deeper nested elements).
+*: This is the universal selector, meaning any element. */
+    padding: 12px;
+}
+
+.spotify-playlists {
+    padding: 16px;
+}
+.spotify-playlists >h1 {
+    font-size: 26px;
+}
+
+
+.card{
+    font-size: 8px;
+    width: 130px;
+    height: 45vh;
+   background-color: #252525;
+    border-radius: 5px;
+    position: relative;
+    padding: 3px;
+    transition: all 1.5s;
+}
+
+.card:hover{
+    background-color: #ffef0be7; 
+    cursor: pointer;
+    --a:1;
+    --b:17vh;
+}
+
+.card img{
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+.card h1{
+    font-size: 16px;
+    text-align: center;
+}
+
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    margin: 13px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.play svg{
+    width: 35px;
+    height: 35px;
+    
+}
+.play{
+    position: absolute;
+   bottom: var(--b);
+    right: 5px;
+     opacity: var(--a);
+    transition: all 1s ease-out;
+}
+
+.signupbtn {
+    background-color: rgb(34 34 34);
+    color: rgb(156, 148, 148);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    /* ye none issliye kia kyuki default kahin na kahi se kuch aara tha  */
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.signupbtn:hover {
+    font-size: 13px;
+    color: white
+}
+
+.loginbtn {
+    background-color: white;
+    border-radius: 21px;
+    color: black;
+   padding: 7px;
+    width: 60px;
+    height: 30px;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 3px;
+    border: none;
+
+}
+
+.loginbtn:hover {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.buttons>* {
+    margin: 0 3px;
+}
+/* means buttons class k andar k elements ko margin dedo upar niche se 0 and left right 12px */
+
+.playbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    /* filter: invert(1); */
+    background: rgb(34 34 34);;
+    border-radius: 10px;
+    width: 64%;
+    margin-left: 25px;
+    margin-right: auto;
+    padding: 12px;
+    min-height: 28px;
+    /* min height issliye kia taaki jab phone me chota ho to jrurt k hisab se badhale height */
+    gap: 8px;
+}
+
+.songList ul{
+    padding: 0 5px;
+    margin: 18px 0;
+
+}
+
+.songList ul li{
+    list-style-type: decimal;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    cursor: pointer;
+    padding: 6px ;
+    border: 1px solid rgba(255, 255, 255, 0.801);
+    width: 205px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.info{
+    font-size: 12px;
+    
+}
+/* .info div{
+    word-break: break-all;
+     ye issliye kiya kyuki agar mobile me gaane ka naam lamba ho to wo playnow ko khiska dera(altho mere website me nhi hua ye)
+ } */
+
+.playnow{
+    display: flex;
+    font-size: 11px;
+    /* margin-left: 14px; */
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    color: white;
+}
+
+.songList {
+  height: 544px;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+/* WebKit Scrollbar Styling */
+.songList::-webkit-scrollbar {
+  width: 2px; /* Width of vertical scrollbar */
+  height: 12px; /* Height of horizontal scrollbar */
+}
+
+.songList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.songList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.songList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.songbuttons{
+   width: 90%;
+   margin: auto;
+   display: flex;
+   gap: 3px;
+   justify-content: center;
+   margin-top: 6px;
+}
+
+.seekbar{
+    width: 95%;
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    background-color: #88888886;
+    border-radius: 5px;
+    /* position: absolute; */
+      cursor: pointer;
+      
+}
+
+.circle { 
+    width: 11px;
+    height: 11px;
+    border-radius: 50%; /* More semantic and reliable for circles */
+    background-color: rgba(255, 255, 255, 0.534);
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.3s ease-in-out; /* Increased duration for smoothness */
+}
+
+
+.songbuttons img{
+    cursor: pointer;
+}
+
+.songinfo{
+    /* background-color: white; */
+   color: rgba(255, 255, 255, 0.685);
+   width: 339px;
+    height: 12px;
+    font-size: 12px;
+
+    /* position: absolute; */
+}
+.songtime{
+     /* background-color: white; */
+    color: rgba(255, 255, 255, 0.685);
+    width: 241px;
+    height: 12px;
+    text-align: end;
+    font-size: 12px;
+    /* position: absolute; */
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.close{
+    display: none;
+}
+
+.volumecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+
+}
+
+.volume img{
+    margin-top: 2px;
+}
+
+/* .volume:hover::after{
+content: "mivid0";
+} */
+
+.volume{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+.range input{
+    cursor: pointer;
+}
+
+.spotify-playlists h1 b {
+  color: rgb(0, 255, 255); /* Aqua */
+  text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.4);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.6));
+  transition: all 0.3s ease-in-out;
+}
+
+.spotify-playlists h1 b:hover {
+  transform: scale(1.05);
+  text-shadow: 3px 3px 10px rgba(0, 255, 255, 0.6);
+  filter: drop-shadow(0 0 12px rgba(0, 255, 255, 0.9));
+}
+
+
+   body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    /* Loader styles */
+    #loader {
+      height: 50px;
+      width: 50px;
+      border: 6px solid aqua;
+      box-shadow: 0 0 80px aqua, 0 0 8px aqua inset;
+      border-radius: 4px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      z-index: 1000;
+      animation: load 3s ease-in-out 0s infinite;
+    }
+
+    @keyframes load {
+      0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+      }
+      33% {
+        transform: rotateX(180deg) rotateY(0) rotateZ(0);
+      }
+      67% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+      }
+      100% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+      }
+    }
+
+    /* Hide main content initially */
+    #main-content {
+      display: none;
+      padding: 20px;
+    }
+
+
+@media (max-width:1350px){
+.left{
+    position: absolute;
+    left: -110%;
+    transition: all 0.3s;
+    z-index: 1;
+    width:233px;
+    padding: 5px;
+}
+
+.right{
+width: 100vw;
+}
+.playbar{
+width: 87%;
+/* qidth: calc(100vw-60px) */
+}
+
+.hamburger{
+    display: block;
+}
+
+.hamburgerContainer{
+    display: flex;
+    align-items: center;
+}
+.cardcontainer{
+    justify-content: center;
+
+}
+.card{
+    width: 258px;
+}
+.left .close{
+    position: absolute;
+    width: 29px;
+    top: 20px;
+  margin-left:200px;
+  display: block;
+}
+
+.right{
+    margin: 0;
+}
+
+.volumecontainer{
+           width: 86px;
+    
+}
+.songinfo{
+    width: 140px;
+}
+.controls{
+    width: 50px;
+   margin-left: 13px;
+        margin-right: 40px;
+
+    display: flex;
+}
+
+.volume{
+    width: 35px;
+}
+.range{
+    /* width: 35px; */
+    width: 216px;
+    margin-top: 2px;
+}
+.volume img {
+    margin-top: 31px;
+}
+
+.play{
+            bottom: 16vh;
+        right: 39px;
+}
+}
+
+@media (max-width:402px){
+    /* ye media query 402 se niche walo k liye */
+
+    .card{
+      width: 80vw;
+    }
+}
