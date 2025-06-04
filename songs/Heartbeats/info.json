@@ -1,7 +1,15 @@
 {
-    "title":"Heartbeats",
-    "description":"Feel every emotion through soft melodies and heartfelt lyrics.",
- "cover": "cover.jpg",
-  "songs": ["Akull - Laal Chunariya.mp3","Anne-Marie - 2002.mp3","ATTRACTION - SUKHA.mp3","Guru Randhawa -MADE IN INDIA.mp3","Humraah - [ reverb].mp3","Kya baat ay (slowed+reverb).mp3","Rarin - Kompa.mp3","Soni Soni.mp3"]
-    
+  "title": "Heartbeats",
+  "description": "Feel every emotion through soft melodies and heartfelt lyrics.",
+  "cover": "cover.jpg",
+  "songs": [
+    "Akull - Laal Chunariya.mp3",
+    "Anne-Marie - 2002.mp3",
+    "ATTRACTION - SUKHA.mp3",
+    "Guru Randhawa -MADE IN INDIA.mp3",
+    "Humraah - [ reverb].mp3",
+    "Kya baat ay (slowed+reverb).mp3",
+    "Rarin - Kompa.mp3",
+    "Soni Soni.mp3"
+  ]
 }
