@@ -1,8 +1,18 @@
 {
-    "title":"Vibe",
-    "description":"Smooth beats and chill moods for late nights and easy mornings.",
-     "cover": "cover.jpg",
-  "songs": ["AFROBEAT INSTRUMENTAL - DARLING.mp3", "Hm Hm hm - Youka.mp3", "HollyBolly Mashup 2021.mp3","INNA - Bad Boys.mp3","KALAASTAR - Yo Yo Honey Singh.mp3",
-"Love Me Back-Trinidad Cardona.mp3","Otilia - Bilionera.mp3","Parano - frozy.mp3","Patola - Guru Randhawa.mp3","Punjabi Dance Smashup 2018.mp3",
-  "Vigdiyan Heeran - Yo Yo Honey Singh.mp3"]
+  "title": "Vibe",
+  "description": "Smooth beats and chill moods for late nights and easy mornings.",
+  "cover": "cover.jpg",
+  "songs": [
+    "AFROBEAT INSTRUMENTAL - DARLING.mp3",
+    "Hm Hm hm - Youka.mp3",
+    "HollyBolly Mashup 2021.mp3",
+    "INNA - Bad Boys.mp3",
+    "KALAASTAR - Yo Yo Honey Singh.mp3",
+    "Love Me Back-Trinidad Cardona.mp3",
+    "Otilia - Bilionera.mp3",
+    "Parano - frozy.mp3",
+    "Patola - Guru Randhawa.mp3",
+    "Punjabi Dance Smashup 2018.mp3",
+    "Vigdiyan Heeran - Yo Yo Honey Singh.mp3"
+  ]
 }
