@@ -1,7 +1,15 @@
 {
-    "title":"Our Time Together",
-    "description":"Songs that scream “us” — memories, moments, and everything in between.",
-    "cover": "cover.jpg",
-  "songs": ["Akull - Bahana.mp3", "Backbone-Hardy Sandhu (slowed+reverb) - Pradabae.mp3", "Fakira Sanam - Sanam.mp3","Fifth Harmony - Work from Home.mp3",
-  "harleys in hawaii - slowed + reverb - Vallvete.mp3","Ishqam Official Video Mika Singh Ft. Ali Quli Mirza Himansh Verma.mp3","One Kiss x I Was Never There.mp3","You and Me - SHUBH.mp3"]
+  "title": "Our Time Together",
+  "description": "Songs that scream “us” — memories, moments, and everything in between.",
+  "cover": "cover.jpg",
+  "songs": [
+    "Akull - Bahana.mp3",
+    "Backbone-Hardy Sandhu (slowed+reverb) - Pradabae.mp3",
+    "Fakira Sanam - Sanam.mp3",
+    "Fifth Harmony - Work from Home.mp3",
+    "harleys in hawaii - slowed + reverb - Vallvete.mp3",
+    "Ishqam Official Video Mika Singh Ft. Ali Quli Mirza Himansh Verma.mp3",
+    "One Kiss x I Was Never There.mp3",
+    "You and Me - SHUBH.mp3"
+  ]
 }
