@@ -198,6 +198,14 @@ currentSong.addEventListener("timeupdate", () => {
   document.querySelector(".circle").style.left = pct + "%";
 });
 
+// ✅ Autoplay next song when current ends
+currentSong.addEventListener("ended", () => {
+  const index = songs.indexOf(currentTrackName);
+  if (index < songs.length - 1) {
+    playMusic(songs[index + 1]);
+  }
+});
+
 // Seek when seekbar clicked
 document.querySelector(".seekbar").addEventListener("click", e => {
   const pct = (e.offsetX / e.target.getBoundingClientRect().width);
@@ -331,5 +339,6 @@ async function main() {
 }
 
 window.addEventListener("load", main);
+
 
 
