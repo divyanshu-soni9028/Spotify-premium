@@ -270,6 +270,14 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
+document.querySelector(".hamburger").addEventListener("click", () => {
+    document.querySelector(".left").style.left = 0;
+  })
+  // adding an event listener for close button
+  document.querySelector(".close").addEventListener("click", () => {
+    document.querySelector(".left").style.left = -110 + "%";
+  }
+  )
 // Load songs array & populate UI
 async function getSongs(folder) {
   currfolder = folder;
