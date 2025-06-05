@@ -214,6 +214,8 @@ document.querySelector(".seekbar").addEventListener("click", e => {
 
 // Volume controls
 const volumeInput = document.querySelector(".range input");
+volumeInput.value = currentSong.volume * 100; // 👈 Set initial value to 100%
+
 volumeInput.addEventListener("change", e => {
   currentSong.volume = e.target.value / 100;
 });
