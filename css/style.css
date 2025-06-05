@@ -120,7 +120,7 @@ p-0{
 
 .card{
     font-size: 12px;
-   width: 237px;
+   width: 181px;
     height: 50vh;
    background-color: #252525;
     border-radius: 5px;
@@ -141,6 +141,7 @@ p-0{
     height: 70%;
     object-fit: contain;
     margin-left: auto;
+    border-radius:21px;
 }
 
 .card h1{
@@ -151,7 +152,7 @@ p-0{
 .cardcontainer{
     display: flex;
     flex-wrap: wrap;
-    gap:5px;
+    gap:15px;
     margin: 13px;
     max-height: 80vh;
     overflow-y: auto;
@@ -479,6 +480,7 @@ width: 87%;
 }
 .cardcontainer{
     justify-content: center;
+    gap:15px;
 
 }
 .card{
