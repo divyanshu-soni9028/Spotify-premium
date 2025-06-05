@@ -318,7 +318,9 @@ async function displayAlbums() {
 
       div.addEventListener("click", async () => {
         await getSongs(div.dataset.folder);
-        playMusic(songs[0], true);
+        // playMusic(songs[0], true);
+        playMusic(songs[0]);  // ✅ This plays the first song
+
       });
 
       container.appendChild(div);
