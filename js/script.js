@@ -307,7 +307,7 @@ async function getSongs(folder) {
 
 // Load and display album cards
 async function displayAlbums() {
-  const folders = ["vibe", "Heartbeats", "Old vibes", "loveyaa", "Uss"];
+  const folders = ["vibe", "Heartbeats", "Old vibes", "loveyaa", "Uss","Trends"];
   const container = document.querySelector(".cardcontainer");
   container.innerHTML = "";
 
