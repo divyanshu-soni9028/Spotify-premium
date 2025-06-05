@@ -329,13 +329,30 @@ async function displayAlbums() {
 }
 
 // Init UI
+// async function main() {
+//   await getSongs("songs/vibe");
+//   playMusic(songs[0], true);
+//   await displayAlbums();
+
+//   document.getElementById("loader").style.display = "none";
+//   document.getElementById("main-content").style.display = "block";
+// }
+
+// Init UI
 async function main() {
+  const startTime = Date.now(); // ⏱️ Start timing
+
   await getSongs("songs/vibe");
   playMusic(songs[0], true);
   await displayAlbums();
 
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("main-content").style.display = "block";
+  // ⏳ Ensure minimum 1.5s loading screen
+  const elapsed = Date.now() - startTime;
+  const remaining = 1500 - elapsed;
+  setTimeout(() => {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+  }, Math.max(remaining, 0)); // Wait remaining time if needed
 }
 
 window.addEventListener("load", main);
